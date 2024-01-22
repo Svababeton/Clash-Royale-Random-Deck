@@ -8,14 +8,14 @@ class CardSelectorApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Card Selector")
-        self.champs = ['archer_queen', 'golden_knight', 'skeleton_king', 'mighty_miner', 'little_prince']
+        self.champs = ['archer_queen', 'golden_knight', 'skeleton_king', 'mighty_miner', 'little_prince', 'monk']
         self.deck_frame = ttk.Frame(root)
         self.deck_frame.pack(pady=10)
         self.select_cards_button = ttk.Button(root, text="Generate Deck", command=self.select_cards)
         self.select_cards_button.pack(pady=10)
 
     def select_cards(self):
-        normal_cards = ['archers', 'arrows', 'balloon', 'bandit', 'barbarians', 'barbarian_barrel', 'barbarian_hut',
+        normal_cards = ['archer_queen', 'archers', 'arrows', 'balloon', 'bandit', 'barbarians', 'barbarian_barrel', 'barbarian_hut',
                         'bats', 'battle_healer', 'battle_ram', 'bomber', 'bomb_tower', 'bowler', 'cannon', 'cannon_cart',
                         'clone', 'dark_prince', 'dart_goblin', 'earthquake', 'electro_dragon', 'electro_giant',
                         'electro_spirit', 'electro_wizard', 'elite_barbarians', 'elixir_collector', 'elixir_golem',
